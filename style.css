@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    background: url('./src/images/pexels-scott-webb-136404.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    padding: 0px 32px;
+}
+
+.container nav .logo {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.container nav .logo span {
+    color: #a62a2a;
+}
+
+.container nav .nav-list {
+    display: flex;
+    gap: 15px;
+}
+
+.container nav .nav-list li {
+    list-style: none;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.container nav .nav-list li a {
+    color: white;
+}
+
+.container nav .nav-list li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Inicio paelleta de redes sociais */
+.social {
+    width: 50px;
+    height: calc(100% - 8vh);
+    position: absolute;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social .social-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.social .social-list li {
+    list-style: none;
+}
+
+.social .social-list li ion-icon {
+    font-size: 1.4em;
+    color: white;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.social .social-list li ion-icon:hover {
+    transform: scale(1.1);
+}
+
+.container .card {
+    width: 400px;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+.container .card h1 {
+    color: white;
+    font-size: 3em;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.container .card h2 {
+    color: white;
+    font-weight: 200;
+}
+
+.container .shadow-bar {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+    background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+}
+
+/* Inicio about personal */
+.about-personal {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 35px;
+    background-color: black;
+}
+
+.about-personal .picture {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-personal .picture img {
+    width: 80%;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+.about-personal .picture img:hover {
+    transform: scale(1.05);
+}
+
+.about-personal .description {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-personal .description h1 {
+    font-size: 3em;
+    font-weight: 300;
+    color: white;
+}
+
+.about-personal .description h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+.about-personal .description p {
+    font-size: .9em;
+    color: white;
+}
+
+/* inicio especialidades */
+.customers {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+}
+
+.customers .description {
+    background-color: #1e1e1e;
+    width: 25%;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.customers .description h1 {
+    font-size: 3em;
+    font-weight: 400;
+    color: white;
+    text-align: left;
+    width: 100%;
+}
+
+.customers .description p {
+    color: white;
+}
+
+.customers .clients-list {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* inicio clients list */
+.customers .clients-list .clients {
+    display: flex;
+    justify-content: space-around;
+    height: 90%;
+    padding: 30px 30px;
+    gap: 20px;
+}
+
+.customers .clients-list .clients .client {
+    list-style: none;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.customers .clients-list .clients .client:hover {
+    transform: scale(1.05);
+}
+
+.customers .clients-list .clients .client img {
+    height: 100%;
+}
+
+/* inicio contact */
+.contact {
+    background-color: black;
+    width: 100vw;
+    height: 90vh;
+    padding: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact h1 {
+    font-size: 3em;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+}
+
+.contact p {
+    text-align: center;
+    color: white;
+}
+
+.contact form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.contact form input {
+    background-color: #141414;
+    padding: 5px 20px;
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+    color: white;
+    width: 100%;
+}
+
+.contact form textarea {
+    background-color: #141414;
+    outline: none;
+    border: none;
+    padding: 5px 20px;
+    width: 100%;
+}
+
+.contact form button {
+    width: 200px;
+    padding: 10px 50px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: green;
+    margin-top: 30px;
+    transition: .3s;
+}
+
+.contact form button:hover {
+    transform: scale(1.05);
+}
+
+/* Inicio footer */
+footer {
+    background-color: #1e1e1e;
+    width: 100vw;
+    height: 50vh;
+    padding: 25px;
+}
+
+footer .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-right: 500px;
+    gap: 40px;
+}
+
+footer .content #social-links {
+    color: white;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .content #social-links .itens {
+    display: flex;
+    gap: 15px;
+}
+
+footer .content #social-links .itens li {
+    list-style: none;
+    cursor: pointer;
+}
+
+footer .content #social-links .itens li ion-icon {
+    color: white;
+    font-size: 1.5em;
+}
+
+footer .content #menu-list {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+} 
+
+footer .content #menu-list li {
+    list-style: none;
+}
+
+footer .content #contact-list {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer .content #contact-list li {
+    list-style: none;
+}
